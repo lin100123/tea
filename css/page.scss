@@ -2,26 +2,8 @@ $maincolor: #355b30;
 $secondarycolor : #759139;
 $secondarycolor2 : #563026;
 $secondarycolor3 : #3D8B58;
-
-.Shop{
-  background-color:$secondarycolor;
-  font-size: 24px;
-  padding: 5px 30px;
-  border-radius: 80px;
-  text-decoration: none;
-  color: #fff;
-  margin: 5px;
- 
-}
-.View{
-  background-color:$maincolor;
-  font-size: 24px;
-  padding: 5px 30px;
-  border-radius: 80px;
-  text-decoration: none;
-  color: #fff;
-  margin: 15px;
-}
+$floralcolor : #fe6666;
+$roastedcolor : #846060;
 .banner_area {
     background: url(/img/banner.png) no-repeat center;
     background-size: cover;
@@ -41,6 +23,18 @@ $secondarycolor3 : #3D8B58;
       }
     &.teaflavor{
       background: url(/img/bannerProduct.jpg) no-repeat center;
+      height: 75vh;
+      width: 100%;
+      background-size: cover;
+      }
+    &.News{
+      background: url(/img/bannerNews.jpg) no-repeat center;
+      height: 75vh;
+      width: 100%;
+      background-size: cover;
+      }
+    &.About{
+      background: url(/img/banner04.jpg) no-repeat center;
       height: 75vh;
       width: 100%;
       background-size: cover;
@@ -180,7 +174,26 @@ $secondarycolor3 : #3D8B58;
         }
       }
     }
-  
+    .Shop{
+      background-color:$secondarycolor;
+      font-size: 24px;
+      padding: 5px 30px;
+      border-radius: 80px;
+      text-decoration: none;
+      color: #fff;
+      margin: 5px;
+     
+    }
+    .View{
+      background-color:$secondarycolor3;
+      font-size: 24px;
+      padding: 5px 30px;
+      border-radius: 80px;
+      text-decoration: none;
+      color: #fff;
+      margin: 15px;
+    }
+
 //Product-Info--start--
     .lnfo{
       display: flex;
@@ -311,6 +324,7 @@ $secondarycolor3 : #3D8B58;
     }
 //Product-Info--end--
 
+//contact--start
 .contact_item{
   max-width: 685px;
   display: flex;
@@ -357,30 +371,48 @@ $secondarycolor3 : #3D8B58;
 }
 //contact--end
 
-.flavor-title{
-  font-size: 48px;
-  text-align: center;
-  width: 1200px;
-  margin:100px -100px;
-  font-family: 'Noto Serif TC', serif;
-  color: $secondarycolor3;
-}
+//teaflavor--start
+.flavor-freshing{
+  margin: 100px 0 350px ;
+  position: relative;
+  &::before{
+    display: inline-block;
+    width: 510px;
+    height: 510px;
+    background: url(../img/page-5-01.png) no-repeat;
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -250px;  
+  }
+  .flavor-title{
+    font-size: 48px;
+    text-align: center;
+    width: 1200px;
+    margin:100px -100px;
+    font-family: 'Noto Serif TC', serif;
+    color: $secondarycolor3;  
+  }
 .flavor-card{
   display: flex;
   align-items: center;
   width: 1300px;
   justify-content: end;
+  margin: 100px 0;
   .flavor-img{
     width: 488px;
     img{
       width: 100%;
     }
   }
+  
   .flavor-text{
     margin:50px;
     .flavor-txt{
       font-size: 32px;
       margin-bottom: 50px;
+      color: $secondarycolor3;
+      }
     }
     p{
       font-size: 24px;
@@ -391,7 +423,7 @@ $secondarycolor3 : #3D8B58;
       margin: 0;
     }
   }
-}
+
 .flavor-card2{
   display: flex;
   flex-direction: row-reverse;
@@ -409,6 +441,7 @@ $secondarycolor3 : #3D8B58;
     .flavor-txt{
       font-size: 32px;
       margin-bottom: 50px;
+      color: $secondarycolor3;
     }
     p{
       font-size: 24px;
@@ -420,4 +453,279 @@ $secondarycolor3 : #3D8B58;
     }
   }
 }
+}
+.flavor-floral-fruit{
+  margin:100px 0 350px;
+  position: relative;
+  &::before{
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    background: url(../img/page-5-02.png) no-repeat;
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -500px;  
+  }
+  .flavor-title{
+    font-size: 48px;
+    text-align: center;
+    width: 1200px;
+    margin:100px -100px;
+    font-family: 'Noto Serif TC', serif;
+    color: $floralcolor;  
+  }
+  .flavor-card{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    justify-content: end;
+    margin: 100px 0;
+    .flavor-img{
+      width: 488px;
+      img{
+        width: 100%;
+      }
+    }
+    
+    .flavor-text{
+      margin:50px;
+      .flavor-txt{
+        font-size: 32px;
+        margin-bottom: 50px;
+        color: $floralcolor;
+        }
+      }
+      p{
+        font-size: 24px;
+        margin-bottom: 30px;
+        width: 280px;
+      }
+      .View{
+        margin: 0;
+        background-color: $floralcolor;
+      }
+    }
+  
+  .flavor-card2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 1600px;
+    justify-content: end;
+    margin: 100px 0;
+    .flavor-img{
+      width: 488px;
+      img{
+        width: 100%;
+      }
+    }
+    .flavor-text{
+      margin:50px;
+      .flavor-txt{
+        font-size: 32px;
+        margin-bottom: 50px;
+        color: $floralcolor;
+      }
+      p{
+        font-size: 24px;
+        margin-bottom: 30px;
+        width: 280px;
+      }
+      .View{
+        margin: 0;
+        background-color: $floralcolor;
+      }
+    }
+  }
+}
+.flavor-roasted{
+  margin: 100px 0 350px ;
+  position: relative;
+  &::before{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background: url(../img/page-5-03.png) no-repeat;
+    content: "";
+    position: absolute;
+    right: -200px;
+    bottom: -300px;  
+  }
+  .flavor-title{
+    font-size: 48px;
+    text-align: center;
+    width: 1200px;
+    margin:100px -100px;
+    font-family: 'Noto Serif TC', serif;
+    color: $roastedcolor;  
+  }
+  .flavor-card{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    justify-content: end;
+    margin: 100px 0;
+    .flavor-img{
+      width: 488px;
+      img{
+        width: 100%;
+      }
+    }
+    
+    .flavor-text{
+      margin:50px;
+      .flavor-txt{
+        font-size: 32px;
+        margin-bottom: 50px;
+        color: $roastedcolor;
+        }
+      }
+      p{
+        font-size: 24px;
+        margin-bottom: 30px;
+        width: 280px;
+      }
+      .View{
+        margin: 0;
+        background-color: $roastedcolor;
+      }
+    }
+  
+  .flavor-card2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 1600px;
+    justify-content: end;
+    margin: 100px 0;
+    .flavor-img{
+      width: 488px;
+      img{
+        width: 100%;
+      }
+    }
+    .flavor-text{
+      margin:50px;
+      .flavor-txt{
+        font-size: 32px;
+        margin-bottom: 50px;
+        color: $roastedcolor;
+      }
+      p{
+        font-size: 24px;
+        margin-bottom: 30px;
+        width: 280px;
+      }
+      .View{
+        margin: 0;
+        background-color: $roastedcolor;
+      }
+    }
+  }
+}
+hr{
+  width: 90%;
+  margin: 0 auto;
+}
+//teaflavor--end
 
+//News--start
+.News{
+  margin: 100px 0;
+  .News-Card{
+    display: flex;
+    width: 1294px;
+    margin: auto;
+    align-items: center;
+    .News-img{
+      width: 827px;
+    }
+    .News-text{
+      text-align: justify;
+      margin-top: 210px;
+      margin-left: 50px;
+      .News-txt{
+        line-height: 60px;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .News-time{
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .View{
+        margin:0;
+      }
+    }
+  }
+  hr{
+    margin: 50px;
+  }
+  .Next-btn{
+    margin: 200px;
+  }
+}
+//News--end
+
+//About--start
+.About{
+  display: flex;
+  margin:50px auto 50px;
+  align-items: center;
+  background: linear-gradient(#ffffffc0, #ffffffcb), url(../img/011.jpg);
+  .about-wrap{
+    margin-left:150px;
+    .about-img{ 
+    margin:50px;
+        img{
+          width: 664px;
+          height: 436px; 
+        }
+    }    
+  }
+  .about-text{
+    flex: 1;
+    line-height: 45px;
+    padding-right:200px;
+    padding-bottom: -700px;
+    font-size: 24px;
+    .store-btn{
+      text-align: end;
+      margin: 50px -10px;
+      .btn1{
+        color: #000;
+        text-decoration: none;
+      }
+      .btn2{
+        color: #000;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #A0A0A0;
+        border-radius: 50%;
+        padding: 0 10px;
+      }
+
+    }   
+    p{
+      display: inline-block;
+      text-align: justify;
+      position: relative;
+      &::before{
+        display: inline-block;
+        width: 500px;
+        height: 500px;
+        background: url(../img/page-5-01.png) no-repeat;
+        content: "";
+        position: absolute;
+        right: -200px;
+        bottom: -560px;  
+      }
+    }
+  } 
+}
+hr{
+  margin: 200px;
+  border: 0px;
+}
+//About--end
